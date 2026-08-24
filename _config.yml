@@ -1,7 +1,7 @@
 
 
-url: "https://abhisekiitm.github.io/ao-site/" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://abhisekiitm.github.io"
+baseurl: "/ao-site"
 title: "Applied Optics Group - Department of Electrical Engineering" # the name of your site, e.g. ACME Corp.
 encoding: utf-8
 
