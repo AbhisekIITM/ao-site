@@ -1,0 +1,47 @@
+
+
+url: "https://aoiitm.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+title: "Applied Optics Group - Department of Electrical Engineering" # the name of your site, e.g. ACME Corp.
+encoding: utf-8
+
+# Disable the default primer theme from github-pages
+theme: null
+
+collections:
+  programs:
+    output: false
+  members:
+    output: false
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: single
+      header:
+        background-image: /assets/img/header-background/none.jpg
+        #height: 300px;
+        #background-size: cover;
+        #background-position: center;
+        width: 30%
+  -
+    scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

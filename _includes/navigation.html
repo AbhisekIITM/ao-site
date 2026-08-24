@@ -1,0 +1,115 @@
+<!-- Main Top Header Navigation Bar -->
+<nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom" style="margin-top: 25px;">
+  <div class="container">
+    <a class="navbar-brand mr-lg-4" href="{{ '/index.html' | relative_url }}">
+      <img src="{{ '/assets/img/brand/IITM-logo.png' | relative_url }}">
+    </a>
+
+    <!-- Small menu hamburger button (Changes look dynamically on mobile) -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_global"
+      aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="navbar-collapse collapse" id="navbar_global">
+      <!-- Small mobile menu header -->
+      <div class="navbar-collapse-header">
+        <div class="row">
+          <div class="col-6 collapse-brand">
+            <a href="{{ '/index.html' | relative_url }}">
+              <img src="{{ '/assets/img/brand/iit-logo.png' | relative_url }}">
+            </a>
+          </div>
+          <div class="col-6 collapse-close">
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar_global"
+              aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Responsive Menu Content Wrapper Container -->
+      <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
+        <li class="nav-item">
+          <a class="nav-link" href="{{ '/members.html' | relative_url }}">
+            <i class="fa fa-address-card d-lg-inline"></i>
+            <span class="nav-link-inner--text">Members</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ '/research.html' | relative_url }}">
+            <i class="ni ni-hat-3 d-lg-inline"></i>
+            <span class="nav-link-inner--text">Research</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ '/publications.html' | relative_url }}">
+            <i class="fa fa-book"></i>
+            <span class="nav-link-inner--text">Publication and Talks</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ '/facilities.html' | relative_url }}">
+            <i class="fa fa-flask"></i>
+            <span class="nav-link-inner--text">Facilities and resources</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ '/gallery.html' | relative_url }}">
+            <i class="fa fa-picture-o"></i>
+            <span class="nav-link-inner--text">Gallery</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ '/involve.html' | relative_url }}">
+            <i class="fa fa-mobile"></i>
+            <span class="nav-link-inner--text">Contact Us</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- RESPONSIVE SMART THEME CONTROLLER CSS -->
+<style>
+  /* 1. MOBILE ONLY RULES (Screens smaller than 991px wide) */
+  @media (max-width: 991.98px) {
+    .navbar-main .navbar-nav .nav-link {
+      color: #1a365d !important; /* Dark navy text links so they can be read on mobile white screens */
+      padding: 12px 15px !important;
+      border-bottom: 1px solid #f1f5f9; /* Subtle separator for mobile thumb touches */
+    }
+    .navbar-main .navbar-nav .nav-link i {
+      color: #1a365d !important; /* Matches icon fills on mobile drawers */
+      margin-right: 10px !important;
+    }
+    .navbar-collapse {
+      background: #ffffff !important; /* Clean crisp background card layout dropdown box */
+      border-radius: 8px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+  }
+
+  /* 2. DESKTOP ONLY RULES (Widescreen configurations) */
+  @media (min-width: 992px) {
+    .navbar-main .navbar-nav .nav-link {
+      color: #ffffff !important; /* Pure white text layout over header image bands */
+    }
+    .navbar-main .navbar-nav .nav-link i {
+      color: #ffffff !important;
+      margin-right: 6px !important;
+    }
+    .navbar-main .navbar-nav .nav-link:hover {
+      color: #38bdf8 !important; /* Highlights to beautiful cyan blue on cursor mouse hover */
+    }
+    .navbar-main .navbar-nav .nav-link:hover i {
+      color: #38bdf8 !important;
+    }
+    .navbar-nav .nav-item {
+      margin-right: 15px; /* Adds space between header choices so they don't bunch up */
+    }
+  }
+</style>

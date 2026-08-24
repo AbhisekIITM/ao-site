@@ -1,0 +1,29 @@
+<div class="container footer" style="font-family: 'Calibri', sans-serif;">
+  {% assign data = site.data.data %}
+  <hr>
+  <div class="row">
+    <div class="col-12 col-md-8 col-lg-9">
+        <div class="col-12 social-media-list">
+          <!-- FIXED: Hardcoded the mailto link and plain text email display to prevent Liquid compile errors -->
+          <a href="mailto:shanti@ee.iitm.ac.in" style="color: #5d8ac7; text-decoration: none; font-weight: bold;">
+              <i class="fa fa-envelope"></i> shanti@ee.iitm.ac.in
+          </a>
+          &nbsp; &nbsp; &nbsp;
+          <!-- UPDATED: Re-routed fully to LinkedIn with clean parameter attributes -->
+          <a target="_blank" href="https://in.linkedin.com/in/dr-shanti-bhattacharya-069210209" rel="noopener noreferrer"
+              style="color: #0077b5; text-decoration: none; font-weight: bold;">
+            <i class="fa fa-linkedin-square"></i> Shanti Bhattacharya LinkedIn
+          </a>
+        </div>
+        <!-- UPDATED: Re-branded copyright text specifically for your IITM group -->
+        <div class="col-12" style="color: #64748b; margin-top: 10px; font-size: 14px;">
+          Copyright &copy; 2019-{{ site.time | date: '%Y' }} Applied Optics Group, IIT Madras. Last updated on {{ site.time | date: '%B %d, %Y' }}.
+        </div>
+    </div>
+    <div class="col-12 col-md-4 col-lg-3 footer-logo" style="text-align: right;">
+      <a href="{{ "/index.html" | relative_url }}">
+        <img src="{{ "/assets/img/brand/IITM-logo.png" | relative_url }}" style="max-height: 60px; object-fit: contain;">
+      </a>
+    </div>
+  </div>
+</div>

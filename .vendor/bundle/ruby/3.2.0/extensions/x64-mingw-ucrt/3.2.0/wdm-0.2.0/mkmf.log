@@ -1,0 +1,54 @@
+have_library: checking for -lkernel32... -------------------- yes
+
+PATH=".;C:/Ruby32-x64/lib;C:\Ruby32-x64\bin;C:\Ruby32-x64\msys64\ucrt64\bin;C:\Ruby32-x64\msys64\usr\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.1\bin\x64;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.1\bin;C:\Program Files\Microsoft MPI\Bin\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR;C:\Program Files\MATLAB\R2026a\runtime\win64;C:\Program Files\MATLAB\R2026a\bin;C:\Program Files\NVIDIA Corporation\Nsight Compute 2025.4.1\;C:\Program Files\Netbird;C:\Program Files\Git\cmd;C:\Ruby32-x64\bin;C:\Users\Expo Lab\.local\bin;C:\Users\Expo Lab\AppData\Local\Microsoft\WindowsApps;C:\Users\Expo Lab\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Expo Lab\AppData\Local\Python\bin;C:\Users\Expo Lab\AppData\Local\Kingsoft\WPS Office\12.1.0.27458\clitool" "gcc -o conftest.exe -IC:/Ruby32-x64/include/ruby-3.2.0/x64-mingw-ucrt -IC:/Ruby32-x64/include/ruby-3.2.0/ruby/backward -IC:/Ruby32-x64/include/ruby-3.2.0 -I.  -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong conftest.c  -L. -LC:/Ruby32-x64/lib -L. -pipe -s -fstack-protector-strong -Wl,--no-as-needed  -m64   -lx64-ucrt-ruby320  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: int main(int argc, char **argv)
+6: {
+7:   return !!argv[argc];
+8: }
+/* end */
+
+PATH=".;C:/Ruby32-x64/lib;C:\Ruby32-x64\bin;C:\Ruby32-x64\msys64\ucrt64\bin;C:\Ruby32-x64\msys64\usr\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.1\bin\x64;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.1\bin;C:\Program Files\Microsoft MPI\Bin\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR;C:\Program Files\MATLAB\R2026a\runtime\win64;C:\Program Files\MATLAB\R2026a\bin;C:\Program Files\NVIDIA Corporation\Nsight Compute 2025.4.1\;C:\Program Files\Netbird;C:\Program Files\Git\cmd;C:\Ruby32-x64\bin;C:\Users\Expo Lab\.local\bin;C:\Users\Expo Lab\AppData\Local\Microsoft\WindowsApps;C:\Users\Expo Lab\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Expo Lab\AppData\Local\Python\bin;C:\Users\Expo Lab\AppData\Local\Kingsoft\WPS Office\12.1.0.27458\clitool" "gcc -o conftest.exe -IC:/Ruby32-x64/include/ruby-3.2.0/x64-mingw-ucrt -IC:/Ruby32-x64/include/ruby-3.2.0/ruby/backward -IC:/Ruby32-x64/include/ruby-3.2.0 -I.  -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong conftest.c  -L. -LC:/Ruby32-x64/lib -L. -pipe -s -fstack-protector-strong -Wl,--no-as-needed  -m64   -lx64-ucrt-ruby320 -lkernel32  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: 
+ 6: /*top*/
+ 7: extern int t(void);
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   if (argc > 1000000) {
+11:     int (* volatile tp)(void)=(int (*)(void))&t;
+12:     printf("%d", (*tp)());
+13:   }
+14: 
+15:   return !!argv[argc];
+16: }
+17: 
+18: int t(void) { ; return 0; }
+/* end */
+
+--------------------
+
+have_header: checking for windows.h... -------------------- yes
+
+PATH=".;C:/Ruby32-x64/lib;C:\Ruby32-x64\bin;C:\Ruby32-x64\msys64\ucrt64\bin;C:\Ruby32-x64\msys64\usr\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.1\bin\x64;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v13.1\bin;C:\Program Files\Microsoft MPI\Bin\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR;C:\Program Files\MATLAB\R2026a\runtime\win64;C:\Program Files\MATLAB\R2026a\bin;C:\Program Files\NVIDIA Corporation\Nsight Compute 2025.4.1\;C:\Program Files\Netbird;C:\Program Files\Git\cmd;C:\Ruby32-x64\bin;C:\Users\Expo Lab\.local\bin;C:\Users\Expo Lab\AppData\Local\Microsoft\WindowsApps;C:\Users\Expo Lab\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Expo Lab\AppData\Local\Python\bin;C:\Users\Expo Lab\AppData\Local\Kingsoft\WPS Office\12.1.0.27458\clitool" "gcc -IC:/Ruby32-x64/include/ruby-3.2.0/x64-mingw-ucrt -IC:/Ruby32-x64/include/ruby-3.2.0/ruby/backward -IC:/Ruby32-x64/include/ruby-3.2.0 -I.  -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong -m64  -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <windows.h>
+/* end */
+
+--------------------
+
