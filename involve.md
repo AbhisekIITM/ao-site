@@ -158,7 +158,7 @@ title: "Contact Us"
             </div>
             <div class="contact-item">
               <i class="fa fa-building"></i>
-              <span>Room No: HOD Office (Electrical Sciences Block)</span>
+              <span>Room No: ESB:  335-B</span>
             </div>
           </div>
         </div>
@@ -181,11 +181,7 @@ title: "Contact Us"
 
             <div class="contact-item">
               <i class="fa fa-envelope"></i>
-              <span>Email: <a href="mailto:shanthib@ee.iitm.ac.in">shanthib@ee.iitm.ac.in</a></span>
-            </div>
-            <div class="contact-item">
-              <i class="fa fa-phone"></i>
-              <span>Phone: +91-44-2257-4426</span>
+              <span>Email: <a href="mailto:shanti@ee.iitm.ac.in">shanthib@ee.iitm.ac.in</a></span>
             </div>
             <div class="contact-item">
               <i class="fa fa-linkedin-square"></i>
@@ -201,20 +197,7 @@ title: "Contact Us"
     <!-- ================================================================= -->
     <!-- NEW: GOOGLE FORM SUBMISSION ALERT BOX SECTION -->
     <!-- ================================================================= -->
-    <div class="errata-box">
-      <div class="errata-text">
-        <strong style="font-size: 16px; display: block; margin-bottom: 4px;">
-          <i class="fa fa-book" style="margin-right: 8px;"></i>Book Errata Notice
-        </strong>
-        Found a typographical error, formula mismatch, or missing value in our published optics textbooks? Help us improve future editions by submitting it directly to our review team.
-      </div>
-      <div>
-        <!-- REPLACE THE '#' URL LINK BELOW WITH YOUR ACTUAL GOOGLE FORM LINK -->
-        <a href="https://google.com" target="_blank" class="errata-form-btn">
-          <i class="fa fa-exclamation-triangle" style="margin-right: 6px;"></i>Report an Error &raquo;
-        </a>
-      </div>
-    </div>
+
     <!-- ================================================================= -->
 
     <!-- MAP SECTION ROW -->
