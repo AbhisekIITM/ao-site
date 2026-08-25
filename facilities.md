@@ -229,7 +229,7 @@ layout: single
         <div class="download-info-title">MetaOptics    </div>
         <div class="download-info-meta">windows software</div>
       </div>
-      <a href="https://drive.google.com/drive/folders/1soUkesQrg4P6qaaaaohkJd3gRuFQCtnF?usp=drive_link" class="download-btn" target="_blank" rel="noopener noreferrer">Download</a>
+      <a href="https://drive.google.com/drive/folders/13JNNMIpgqMMrghrcYjTmmgdcdY4fLALg?usp=sharing" class="download-btn" target="_blank" rel="noopener noreferrer">Download</a>
     </li>
 
     <!-- Download Item 2 -->
