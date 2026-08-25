@@ -16,17 +16,17 @@ layout: single
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
+    gap: 20px; /* Reduced gap slightly for smaller cards */
     padding: 20px 0;
   }
 
   .instrument-card {
     position: relative;
     flex: 1;
-    min-width: 280px;
-    max-width: 350px;
-    height: 250px;
-    border-radius: 8px;
+    min-width: 180px; /* Reduced from 280px to make icons much smaller */
+    max-width: 210px; /* Reduced from 350px to make icons much smaller */
+    height: 160px;    /* Reduced from 250px to make icons much smaller */
+    border-radius: 6px;
     overflow: hidden;
     background-color: #ffffff;
     border: 1px solid #222222;
@@ -61,7 +61,7 @@ layout: single
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 20px;
+    padding: 0 15px;
     text-align: center;
     box-sizing: border-box;
   }
@@ -74,28 +74,28 @@ layout: single
   .overlay-title {
     color: #ffffff;
     font-family: 'Calibri', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.1rem; /* Slightly reduced to match smaller text limits */
     font-weight: bold;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
   }
 
   .overlay-description {
     color: #e2e8f0;
-    font-size: 14px;
-    line-height: 1.4;
+    font-size: 12px; /* Balanced text visibility sizing */
+    line-height: 1.3;
   }
 
   /* Fallback Label for Static Displays (Before Hover) */
   .instrument-label {
     position: absolute;
-    bottom: 10px;
-    left: 10px;
+    bottom: 8px;
+    left: 8px;
     background: rgba(0, 0, 0, 0.7);
     color: #fff;
-    padding: 5px 10px;
+    padding: 4px 8px;
     border-radius: 4px;
     font-family: 'Calibri', sans-serif;
-    font-size: 14px;
+    font-size: 12px;
     transition: opacity 0.3s ease;
   }
   .instrument-card:hover .instrument-label {
@@ -266,6 +266,15 @@ layout: single
         <div class="download-info-meta">windows software</div>
       </div>
       <a href="https://drive.google.com/drive/folders/13JNNMIpgqMMrghrcYjTmmgdcdY4fLALg?usp=sharing" class="download-btn" target="_blank" rel="noopener noreferrer">Download</a>
+    </li>
+
+    <!-- Added CNNP Website Reference Link Item -->
+    <li class="download-item">
+      <div>
+        <div class="download-info-title">Centre for NEMS and Nanophotonics (CNNP)</div>
+        <div class="download-info-meta">Official IITM Fabrication Facility site</div>
+      </div>
+      <a href="http://www.ee.iitm.ac.in/cnnp/" class="download-btn" target="_blank" rel="noopener noreferrer">Visit Website</a>
     </li>
   </ul>
 
