@@ -1,7 +1,5 @@
 ---
 layout: single
-
-
 ---
 
 <!-- Plain Text Title Block -->
@@ -12,7 +10,7 @@ layout: single
   <hr style="border-top: 2px solid #1a365d; margin: 15px auto 0 auto; width: 50%;">
 </div>
 
-<!-- CSS Styles for Hover Overlay Effects -->
+<!-- CSS Styles for Hover Overlay Effects & Added Elements -->
 <style>
   .instruments-grid {
     display: flex;
@@ -169,6 +167,43 @@ layout: single
   .download-btn:hover {
     background-color: #2c5282;
   }
+
+  /* Typographical Error Section Styling */
+  .typo-section {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fef2f2;
+    border: 1px dashed #f87171;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .typo-text {
+    color: #991b1b;
+    font-size: 14px;
+    margin: 0;
+    line-height: 1.5;
+  }
+
+  .typo-btn {
+    display: inline-block;
+    background-color: #dc2626;
+    color: #ffffff !important;
+    text-decoration: none !important;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    white-space: nowrap;
+    transition: background-color 0.2s ease;
+  }
+
+  .typo-btn:hover {
+    background-color: #b91c1c;
+  }
 </style>
 
 <!-- Instruments Grid Display Container -->
@@ -218,21 +253,6 @@ layout: single
   </div>
 </div>
 
-/* NEW: Google Form Error Reporting Alert Section CSS */
-.errata-box {
-  background: #fef2f2; /* Light administrative alert red tint */
-  border: 1px solid #fca5a5;
-  border-left: 4px solid #ef4444; /* High-visibility red alert stripe */
-  border-radius: 8px;
-  padding: 20px;
-  margin-bottom: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 20px;
-  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.02);
-}
 
 <!-- Downloads Section Container -->
 <div class="downloads-section">
@@ -242,12 +262,18 @@ layout: single
     <!-- Download Item 1 -->
     <li class="download-item">
       <div>
-        <div class="download-info-title">MetaOptics    </div>
+        <div class="download-info-title">MetaOptics</div>
         <div class="download-info-meta">windows software</div>
       </div>
       <a href="https://drive.google.com/drive/folders/13JNNMIpgqMMrghrcYjTmmgdcdY4fLALg?usp=sharing" class="download-btn" target="_blank" rel="noopener noreferrer">Download</a>
     </li>
-
-
   </ul>
+
+  <!-- Added Typographical Error Reporting Block -->
+  <div class="typo-section">
+    <p class="typo-text">
+      <strong>Noticed a mistake?</strong> If you find any typographical errors or inconsistencies in our published books or literature, please let us know so we can update them.
+    </p>
+    <a href="https://google.com" class="typo-btn" target="_blank" rel="noopener noreferrer">Report Typo</a>
+  </div>
 </div>
