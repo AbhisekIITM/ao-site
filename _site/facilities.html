@@ -273,6 +273,29 @@
     opacity: 0; /* Hides label when description pops up */
   }
 
+  /* CSS Styles for the CNNP link section underneath instruments */
+  .cnnp-container {
+    max-width: 800px;
+    margin: 10px auto 30px auto;
+    padding: 0 20px;
+    font-family: 'Calibri', sans-serif;
+  }
+
+  .cnnp-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+  }
+
+  .cnnp-box:hover {
+    background-color: #f1f5f9;
+  }
+
   /* CSS Styles for the Downloads Section */
   .downloads-section {
     max-width: 800px;
@@ -424,6 +447,17 @@
   </div>
 </div>
 
+<!-- CNNP Website Reference Link (Positioned directly under instruments) -->
+<div class="cnnp-container">
+  <div class="cnnp-box">
+    <div>
+      <div class="download-info-title">Centre for NEMS and Nanophotonics (CNNP)</div>
+      <div class="download-info-meta">Official IITM Fabrication Facility site</div>
+    </div>
+    <a href="http://iitm.ac.in" class="download-btn" target="_blank" rel="noopener noreferrer">Visit Website</a>
+  </div>
+</div>
+
 <!-- Downloads Section Container -->
 <div class="downloads-section">
   <h2 class="downloads-heading">Resources</h2>
@@ -435,16 +469,7 @@
         <div class="download-info-title">MetaOptics</div>
         <div class="download-info-meta">windows software</div>
       </div>
-      <a href="https://drive.google.com/drive/folders/13JNNMIpgqMMrghrcYjTmmgdcdY4fLALg?usp=sharing" class="download-btn" target="_blank" rel="noopener noreferrer">Download</a>
-    </li>
-
-    <!-- Added CNNP Website Reference Link Item -->
-    <li class="download-item">
-      <div>
-        <div class="download-info-title">Centre for NEMS and Nanophotonics (CNNP)</div>
-        <div class="download-info-meta">Official IITM Fabrication Facility site</div>
-      </div>
-      <a href="http://www.ee.iitm.ac.in/cnnp/" class="download-btn" target="_blank" rel="noopener noreferrer">Visit Website</a>
+      <a href="https://google.com" class="download-btn" target="_blank" rel="noopener noreferrer">Download</a>
     </li>
   </ul>
 
