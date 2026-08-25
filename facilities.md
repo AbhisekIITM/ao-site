@@ -232,8 +232,6 @@ layout: single
       <a href="https://drive.google.com/drive/folders/13JNNMIpgqMMrghrcYjTmmgdcdY4fLALg?usp=sharing" class="download-btn" target="_blank" rel="noopener noreferrer">Download</a>
     </li>
 
-    <!-- Download Item 2 -->
-  
 
   </ul>
 </div>
