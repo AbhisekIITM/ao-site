@@ -256,7 +256,7 @@ layout: single
 
 <!-- Downloads Section Container -->
 <div class="downloads-section">
-  <h2 class="downloads-heading">Downloads</h2>
+  <h2 class="downloads-heading">Resources</h2>
 
   <ul class="downloads-list">
     <!-- Download Item 1 -->
