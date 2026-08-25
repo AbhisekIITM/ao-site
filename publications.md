@@ -16,11 +16,6 @@ title: "Publications & Research"
     <a href="https://youtube.com/playlist?list=PLyqSpQzTE6M9KuQnanecDqCiJUCnCgSQf&si=2za0Klbqep9Qxrkx" target="_blank" class="course-btn">
       <i class="fa fa-youtube-play" style="margin-right: 8px; color: #ff0000;"></i> Optical Engineering &raquo;
     </a>
-
-    <!-- Course Button 2 -->
-    <a href="https://youtube.com" target="_blank" class="course-btn">
-      <i class="fa fa-youtube-play" style="margin-right: 8px; color: #ff0000;"></i> OSLO &raquo;
-    </a>
   </div>
 </div>
 
